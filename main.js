@@ -1,11 +1,10 @@
+import { apiKey } from "./private"
 const main = document.querySelector('main')
 const apodEl = document.querySelector('.apod')
 const roverList = document.querySelector('.rover-list')
 const errorMsg = document.querySelector('.error-msg')
 const dateInput = document.querySelector('#date-input')
 const submitButton = document.querySelector('#submit-button')
-
-const apiKey = 'wfXijQSHw3imdZkGf8MC9bldT0C7plzvKL6ffGGe'
 
 const apodURL = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
 const roverURL = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2023-01-15&api_key=${apiKey}`;  
